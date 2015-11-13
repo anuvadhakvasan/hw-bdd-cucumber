@@ -15,9 +15,11 @@ end
 #   on the same page
 
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
+  regexp = /#{e1}.*#{e2}/m 
+  page.body.should =~ regexp  
   #  ensure that that e1 occurs before e2.
   #  page.body is the entire content of the page as a string.
-  fail "Unimplemented"
+  #fail "Unimplemented"
 end
 
 # Make it easier to express checking or unchecking several boxes at once
