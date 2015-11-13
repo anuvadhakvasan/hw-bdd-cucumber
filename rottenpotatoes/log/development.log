@@ -493,3 +493,736 @@ Started GET "/assets/application.self.css?body=1" for ::1 at 2015-07-23 13:57:16
 
 
 Started GET "/assets/application.self.js?body=1" for ::1 at 2015-07-23 13:57:16 -0700
+
+
+Started GET "/assets/rails.png" for 117.208.236.14 at 2015-11-13 04:51:40 +0000
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:51:45 +0000
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+  Rendered movies/index.html.haml within layouts/application (103.4ms)
+Completed 200 OK in 310ms (Views: 277.8ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:51:45 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:51:45 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:51:45 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:51:46 +0000
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:51:46 +0000
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')
+  Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:51:47 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:51:47 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:51:47 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:51:47 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date" for 117.208.236.14 at 2015-11-13 04:52:03 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"release_date"}
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date" for 117.208.236.14 at 2015-11-13 04:52:03 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (11.2ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:03 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:04 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:04 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:04 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:07 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:07 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (16.9ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:07 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:07 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:08 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:08 +0000
+
+
+Started GET "/movies/17" for 117.208.236.14 at 2015-11-13 04:52:20 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 17]]
+  Rendered movies/show.html.haml within layouts/application (11.6ms)
+Completed 200 OK in 40ms (Views: 29.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:21 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:21 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:21 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:21 +0000
+
+
+Started DELETE "/movies/17" for 117.208.236.14 at 2015-11-13 04:52:25 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Zi3yFaXozFt/o7AYLdXrJTC4ysCiD/2lzEg9ZyMrukPUDVEASv6oU0QyAoVpelIYbxN4r5S6H0ehRc5HILuw9w==", "id"=>"17"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 17]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 17]]
+  [1m[36m (7.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 12ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:52:25 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:25 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:25 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:25 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:26 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:26 +0000
+
+
+Started GET "/movies/11" for 117.208.236.14 at 2015-11-13 04:52:29 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered movies/show.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:29 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:29 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:29 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:30 +0000
+
+
+Started DELETE "/movies/11" for 117.208.236.14 at 2015-11-13 04:52:32 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lOFBYwxHRHG2Q3Y8o0RPCO52Nku1n9fG2YeSSoi7aLcmweJ241EgeY3SxKHn6/Y1sd2EJIMqNSS0imFqiytiAw==", "id"=>"11"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 11]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 12ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:52:32 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:32 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:33 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:33 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:33 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:33 +0000
+
+
+Started GET "/movies/16" for 117.208.236.14 at 2015-11-13 04:52:36 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered movies/show.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 96ms (Views: 94.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:36 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:36 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:37 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:37 +0000
+
+
+Started DELETE "/movies/16" for 117.208.236.14 at 2015-11-13 04:52:39 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"1ETgm9OmNMwCzF3sC2K2rpGIpdgVTY8qN23g3ZcVjBlmZEOOPLBQxDld73FPzQ+TziMXtyP4bchaYBP9lIWGrQ==", "id"=>"16"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 16]]
+  [1m[36m (11.2ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 14ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:52:39 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:39 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (11.7ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:40 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:40 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:40 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:40 +0000
+
+
+Started GET "/movies/20" for 117.208.236.14 at 2015-11-13 04:52:42 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 20]]
+  Rendered movies/show.html.haml within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:42 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:42 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:43 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:43 +0000
+
+
+Started DELETE "/movies/20" for 117.208.236.14 at 2015-11-13 04:52:46 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vFY5YWsg2d2pyr7cdSytmwEIpslbxQ7CuRFT7GkhE2AOdpp0hDa91ZJbDEExgxSmXqMUpm1w7CDUHKDMarEZ1A==", "id"=>"20"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 20]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 13ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:52:46 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:46 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:46 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:46 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:47 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:47 +0000
+
+
+Started GET "/movies/15" for 117.208.236.14 at 2015-11-13 04:52:49 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 15]]
+  Rendered movies/show.html.haml within layouts/application (1.9ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:49 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:49 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:50 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:50 +0000
+
+
+Started DELETE "/movies/15" for 117.208.236.14 at 2015-11-13 04:52:53 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CzEjeM4gg90bquJ3dlBJExSssElDXctvcZp4VDR/Fa+5EYBtITbn1SA7UOoy//AuSwcCJnXoKY0cl4t0N+8fGw==", "id"=>"15"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 15]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 13ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:52:53 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:52:53 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:54 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:54 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:54 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:54 +0000
+
+
+Started GET "/movies/19" for 117.208.236.14 at 2015-11-13 04:52:56 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 19]]
+  Rendered movies/show.html.haml within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:56 +0000
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:52:57 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:57 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:52:58 +0000
+
+
+Started DELETE "/movies/19" for 117.208.236.14 at 2015-11-13 04:53:00 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fZIdspq5XwGFuWyM3hq6mLMN9Ic1qfxEkI7XGXVn0i/Psr6nda87Cb4o3hGatQOl7KZG6AMcHqb9gyQ5dvfYmw==", "id"=>"19"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 19]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 152ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:53:00 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:53:00 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (7.4ms)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:00 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:00 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:01 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:01 +0000
+
+
+Started GET "/movies/14" for 117.208.236.14 at 2015-11-13 04:53:05 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 14]]
+  Rendered movies/show.html.haml within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:05 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:05 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:06 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:06 +0000
+
+
+Started DELETE "/movies/14" for 117.208.236.14 at 2015-11-13 04:53:09 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lLK/0ETLlQc/QQP08ACHcMgjdQn11+cgUXxN9GyW7tMmkhzFq93xDwTQsWm0rz5Nl4jHZsNiBcI8cb7UbwbkZw==", "id"=>"14"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 14]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 14]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 13ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:53:09 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:53:10 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:10 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:10 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:10 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:10 +0000
+
+
+Started GET "/movies/18" for 117.208.236.14 at 2015-11-13 04:53:14 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 18]]
+  Rendered movies/show.html.haml within layouts/application (2.4ms)
+Completed 200 OK in 190ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:14 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:14 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:15 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:15 +0000
+
+
+Started DELETE "/movies/18" for 117.208.236.14 at 2015-11-13 04:53:17 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GbpLPCuyoI/lNJqlhUWOkW9CA+iP4erIUaC3/KHZhqmrmugpxKTEh96lKDjB6jesMOmxh7lUCCo8rUTcokmMHQ==", "id"=>"18"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 18]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 18]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 122ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:53:17 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:53:17 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:17 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:17 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:18 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:18 +0000
+
+
+Started GET "/movies/12" for 117.208.236.14 at 2015-11-13 04:53:21 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered movies/show.html.haml within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:21 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:21 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:22 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:22 +0000
+
+
+Started DELETE "/movies/12" for 117.208.236.14 at 2015-11-13 04:53:25 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2KOy8a74wJ170vBbnoH2+Zy+iWIRD5+S7MWrXGW7wqNqgxHkQe6klUBDQsbaLk/EwxU7DSe6fXCByFh8ZivIFw==", "id"=>"12"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 12]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 10ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:53:25 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:53:25 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:25 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:25 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:26 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:26 +0000
+
+
+Started GET "/movies/13" for 117.208.236.14 at 2015-11-13 04:53:29 +0000
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 13]]
+  Rendered movies/show.html.haml within layouts/application (1.7ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:29 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:29 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:29 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:30 +0000
+
+
+Started DELETE "/movies/13" for 117.208.236.14 at 2015-11-13 04:53:31 +0000
+Processing by MoviesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lpCWXAwjMdUQtS+KpktkrMtvIUAN8HkIUqJRe5ZcLD4ksDVJ4zVV3SsknRfi5N2RlMSTLztFm+o/r6Jblcwmig==", "id"=>"13"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 13]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "movies" WHERE "movies"."id" = ?  [["id", 13]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies
+Completed 302 Found in 93ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/movies" for 117.208.236.14 at 2015-11-13 04:53:31 +0000
+Processing by MoviesController#index as HTML
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=title" for 117.208.236.14 at 2015-11-13 04:53:32 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"title"}
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."title" ASC
+  Rendered movies/index.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:32 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:32 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:32 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:32 +0000
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date" for 117.208.236.14 at 2015-11-13 04:53:38 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"release_date"}
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=G&ratings%5BNC-17%5D=NC-17&ratings%5BPG%5D=PG&ratings%5BPG-13%5D=PG-13&ratings%5BR%5D=R&sort=release_date" for 117.208.236.14 at 2015-11-13 04:53:38 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"G", "NC-17"=>"NC-17", "PG"=>"PG", "PG-13"=>"PG-13", "R"=>"R"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (6.9ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:39 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:39 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:39 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:39 +0000
+
+
+Started GET "/movies?utf8=%E2%9C%93&%3Arelease_date_sort=true&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BNC-17%5D=1&commit=Refresh" for 117.208.236.14 at 2015-11-13 04:53:43 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", ":release_date_sort"=>"true", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "NC-17"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&sort=release_date
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&sort=release_date" for 117.208.236.14 at 2015-11-13 04:53:43 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1"}, "sort"=>"release_date"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13')  ORDER BY "movies"."release_date" ASC
+  Rendered movies/index.html.haml within layouts/application (34.0ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 04:53:43 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:43 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:44 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 04:53:44 +0000
+  [1m[36m (13.1ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (8.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (7.5ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (7.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120130161449')
+  [1m[36m (8.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+  [1m[36m (10.4ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (8.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (8.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120130161449')
+  [1m[36m (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
