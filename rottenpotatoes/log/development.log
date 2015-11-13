@@ -1226,3 +1226,30 @@ Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-1
   [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
   [1m[35m (6.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20120130161449')
   [1m[36m (7.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+
+
+Started GET "/movies?utf8=%E2%9C%93&%3Arelease_date_sort=true&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BNC-17%5D=1&ratings%5BR%5D=1&commit=Refresh" for 117.208.236.14 at 2015-11-13 07:07:16 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", ":release_date_sort"=>"true", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1", "NC-17"=>"1", "R"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://saasbook-anuvadhakvasan.c9.io/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BNC-17%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&ratings%5BR%5D=1&sort=release_date" for 117.208.236.14 at 2015-11-13 07:07:16 +0000
+Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "NC-17"=>"1", "PG"=>"1", "PG-13"=>"1", "R"=>"1"}, "sort"=>"release_date"}
+  [1m[36mMovie Load (2.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'NC-17', 'PG', 'PG-13', 'R')  ORDER BY "movies"."release_date" ASC[0m
+  Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 36ms (Views: 31.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.self.css?body=1" for 117.208.236.14 at 2015-11-13 07:07:16 +0000
+
+
+Started GET "/assets/jquery.self.js?body=1" for 117.208.236.14 at 2015-11-13 07:07:17 +0000
+
+
+Started GET "/assets/jquery_ujs.self.js?body=1" for 117.208.236.14 at 2015-11-13 07:07:17 +0000
+
+
+Started GET "/assets/application.self.js?body=1" for 117.208.236.14 at 2015-11-13 07:07:17 +0000
